@@ -1,0 +1,35 @@
+body {
+    margin: 3rem;
+    max-width: 50rem;
+    justify-self: center;
+}
+* {
+    font-family: Verdana, serif;
+}
+
+h1 {
+    margin: 0 0 -0.2rem 0;
+}
+
+img {
+    margin: 0;
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+p {
+    text-align: justify;
+}
+
+div.paragraph-with-image {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        padding: 2%;
+        width: 10em;
+        height: 15em;
+    }
+}
