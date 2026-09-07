@@ -1,0 +1,45 @@
+
+body {
+    margin: 100px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+div.green {
+    background-color: green;
+}
+div.green:hover {
+    border-radius: 100%;
+    background-color: lightgreen;
+}
+
+
+div.red {
+    background-color: red;
+    margin-top: 100px;
+    margin-left: 100px;
+    z-index: 1000;
+
+}
+div.red:hover {
+    rotate: 45deg;
+}
+div.blue {
+    background-color: blue;
+    margin-top: 200px;
+    margin-left: 200px;
+
+}
+div.blue:hover {
+    opacity: 0.0;
+}
+
+
+@keyframes rotate {
+    from {rotate: 0deg;}
+    to {rotate: 45deg;}
+}
