@@ -1,8 +1,9 @@
 body {
-    margin: 3rem;
+    margin: 3rem auto;
     max-width: 50rem;
-    justify-self: center;
+    padding: 1em;
 }
+
 * {
     font-family: Verdana, serif;
 }
@@ -22,14 +23,10 @@ p {
     text-align: justify;
 }
 
-div.paragraph-with-image {
-    all: unset;
-    display: flex;
-    flex-wrap: wrap;
-
-    img {
-        padding: 2%;
-        width: 10em;
-        height: 15em;
-    }
+div.paragraph-with-image img {
+    float: right;
+    width: 10em;
+    height: 15em;
+    margin: 0 0 0 1em;
+    border: 0.2rem solid black;
 }
