@@ -1,3 +1,8 @@
+@view-transition {
+    navigation: auto;
+}
+
+
 
 body {
     margin: 100px;
@@ -7,7 +12,7 @@ div {
     width: 200px;
     height: 200px;
     position: absolute;
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 div.green {
     background-color: green;
@@ -15,6 +20,7 @@ div.green {
 div.green:hover {
     border-radius: 100%;
     background-color: lightgreen;
+    z-index: 3;
 }
 
 
@@ -22,7 +28,7 @@ div.red {
     background-color: red;
     margin-top: 100px;
     margin-left: 100px;
-    z-index: 1000;
+    z-index: 2;
 
 }
 div.red:hover {
