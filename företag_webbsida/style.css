@@ -1,0 +1,72 @@
+@view-transition {
+    navigation: auto;
+}
+
+* {
+    font-family: "Charis SIL", serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+div.title {
+
+    display: flex;
+    align-items: baseline;
+    margin: 0em 1em;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+}
+
+nav {
+    background-color: lightblue;
+}
+
+ul li {
+    float: inline-start;
+    border-right: 0.1em solid #ffffff;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ul li a:hover {
+    color: #2e87b6;
+}
+
+ul li a.active {
+    text-decoration: underline;
+}
+
+
+div.info {
+    background-color: lightblue;
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+footer.bottom {
+    background-color: lightblue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
