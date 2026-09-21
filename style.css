@@ -2,6 +2,11 @@
     navigation: auto;
 }
 
+:root {
+    --primary-color: #185b80;
+    --secondary-color: #134561;
+}
+
 * {
     font-family: "Charis SIL", serif;
 }
@@ -52,7 +57,7 @@ ul li a {
     transition: color 0.3s;
 }
 ul li a:hover {
-    color: #2e87b6;
+    color: #185b80;
 }
 
 ul li a.active {
@@ -61,4 +66,32 @@ ul li a.active {
 
 p {
     padding: 0 1em;
+}
+
+main {
+    align-content: center;
+}
+
+.button {
+    display: inline-block;
+    width: 10em;
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 3px #999;
+}
+
+.button:hover {
+    font-size: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 3px #999;
 }
