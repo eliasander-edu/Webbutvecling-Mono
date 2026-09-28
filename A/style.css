@@ -1,5 +1,16 @@
+@font-face {
+    font-family: Servdia;
+    src: url("./assets/Servdia.ttf");
+}
 
+* {
+}
 
+header,
+.release-date,
+nav {
+    font-family: Servdia;
+}
 
 body {
     margin: 0;
@@ -17,10 +28,7 @@ header {
 
 div.bg-image {
     /* The image used */
-    background-image: url("./background.png");
-
-    /* Add the blur effect */
-    filter: blur(4px);
+    background-image: url("./assets/background.png");
 
     /* Full height */
     height:100%;
@@ -35,7 +43,7 @@ div.bg-image {
 
 img {
     object-fit: contain;
-    width: 60%;
+    width: 50%;
     height: auto;
     image-rendering: pixelated;
     grid-area: 1 / 1;
@@ -43,23 +51,275 @@ img {
 }
 
 /* Style the top navigation bar */
-.topnav {
+nav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #402914;
+    display: flex;
 }
 
 /* Style the topnav links */
-.topnav a {
+nav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
+    border-left: 1px solid #bbb;
+}
+
+nav a:first-child {
+    border-left: none;
 }
 
 /* Change color on hover */
-.topnav a:hover {
+nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.release-date {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    margin: auto;
+    width: fit-content;
+    background-color: #aad7df;
+    color: #2f6c77;
+    padding: 10px 20px;
+
+}
+
+.section-img,
+.release-date {
+  clip-path: polygon(
+    0px calc(100% - 10px),
+    5px calc(100% - 10px),
+    5px calc(100% - 5px),
+    10px calc(100% - 5px),
+    10px 100%,
+    calc(100% - 10px) 100%,
+    calc(100% - 10px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 5px),
+    calc(100% - 5px) calc(100% - 10px),
+    100% calc(100% - 10px),
+    100% 10px,
+    calc(100% - 5px) 10px,
+    calc(100% - 5px) 5px,
+    calc(100% - 10px) 5px,
+    calc(100% - 10px) 0px,
+    10px 0px,
+    10px 5px,
+    5px 5px,
+    5px 10px,
+    0px 10px
+  );
+  
+}
+
+
+.section1,
+.section2,
+.section3 {
+    background-color: #e03838;
+    font-family: Servdia;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 200px;
+        justify-self: flex-end;
+    }
+
+    div {
+        justify-content: center;
+
+        p {
+
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+    }
+
+}
+
+.section2 {
+    
+    left: 70%;
+    translate: -50%;
+}
+
+.section1,
+.section3 {
+    
+    left: 30%;
+    translate: -50%;
+}
+
+
+.section-border,
+.section-border--wrapper {
+  clip-path: polygon(0px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px 100%,
+    calc(100% - 25px) 100%,
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 25px),
+    100% calc(100% - 25px),
+    100% 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 0px,
+    25px 0px,
+    25px 5px,
+    15px 5px,
+    15px 10px,
+    10px 10px,
+    10px 15px,
+    5px 15px,
+    5px 25px,
+    0px 25px);
+  position: relative;
+}
+.section-border {
+  border: 5px solid transparent;
+}
+.section-border--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+.section-border--wrapper .section-border {
+  display: block;
+  clip-path: polygon(5px 25px,
+    10px 25px,
+    10px 15px,
+    15px 15px,
+    15px 10px,
+    25px 10px,
+    25px 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 25px),
+    5px calc(100% - 25px));
+}
+.section-border::after,
+.section-border--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px 100%,
+    calc(100% - 25px) 100%,
+    calc(100% - 25px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 5px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 15px),
+    calc(100% - 5px) calc(100% - 25px),
+    100% calc(100% - 25px),
+    100% 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 0px,
+    25px 0px,
+    25px 5px,
+    15px 5px,
+    15px 10px,
+    10px 10px,
+    10px 15px,
+    5px 15px,
+    5px 25px,
+    0px 25px,
+    0px 50%,
+    5px 50%,
+    5px 25px,
+    10px 25px,
+    10px 15px,
+    15px 15px,
+    15px 10px,
+    25px 10px,
+    25px 5px,
+    calc(100% - 25px) 5px,
+    calc(100% - 25px) 10px,
+    calc(100% - 15px) 10px,
+    calc(100% - 15px) 15px,
+    calc(100% - 10px) 15px,
+    calc(100% - 10px) 25px,
+    calc(100% - 5px) 25px,
+    calc(100% - 5px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 25px),
+    calc(100% - 10px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 10px),
+    calc(100% - 25px) calc(100% - 5px),
+    25px calc(100% - 5px),
+    25px calc(100% - 10px),
+    15px calc(100% - 10px),
+    15px calc(100% - 15px),
+    10px calc(100% - 15px),
+    10px calc(100% - 25px),
+    5px calc(100% - 25px),
+    5px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #402914;
+  display: block;
+  pointer-events: none;
+}
+.section-border::after {
+  margin: -5px;
 }
