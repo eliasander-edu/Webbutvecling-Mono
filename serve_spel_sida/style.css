@@ -15,6 +15,9 @@ nav {
 body {
     margin: 0;
     padding: 0;
+    background-image: url("assets/water.gif");
+    background-size: 80px;
+    image-rendering: pixelated;
 }
 
 
@@ -32,7 +35,7 @@ div.bg-image {
 
     /* Full height */
     height:100%;
-    width: 100vw;
+    width: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -117,6 +120,23 @@ nav a:hover {
   
 }
 
+main,
+.island-end {
+    background-image: url("assets/grass.png");
+    background-size: 80px;
+    padding: 20px 0px;
+    margin: 20px 20px 0 20px;
+    width: 90%;
+    justify-self: center;
+    image-rendering: pixelated;
+}
+.island-end {
+    
+    background-image: url("assets/grass_front.png");
+    background-repeat: repeat-x;
+    margin: 0;
+}
+
 
 .section1,
 .section2,
@@ -138,27 +158,23 @@ nav a:hover {
 
     div {
         justify-content: center;
+        padding: 10px;
 
         p {
 
             font-family: Arial, Helvetica, sans-serif;
-            padding: 5px;
         }
     }
 
 }
 
 .section2 {
-    
-    left: 70%;
-    translate: -50%;
+    justify-self: right;
 }
 
 .section1,
 .section3 {
-    
-    left: 30%;
-    translate: -50%;
+    justify-self: left;
 }
 
 
