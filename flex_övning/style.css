@@ -1,0 +1,103 @@
+/* ---< Påverkar hela sidan >--------- */
+body {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px 0px;
+	background-color: cadetblue;
+	background-image: url('./bakgrund.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+p {
+	padding: 0 1em;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0px 15px;
+}
+
+/* ---< HEADER & NAV >---------------- */
+header {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+
+	display: flex;
+	flex: auto;
+	justify-content: center;
+}
+
+nav {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+
+	flex: auto;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 1em;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav li {
+	padding: 1em 0;
+}
+
+/* ---< MAIN >------------------------ */
+main {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.151);
+	flex: 6;
+}
+
+main p {
+}
+
+main h2 {
+	padding: 0 1em;
+}
+
+/* ---< ASIDES >---------------------- */
+aside h4 {
+	padding: 0 1em;
+}
+
+.aside1 {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-radius: 0px 10px 10px 0px;
+	border: 1px solid rgba(0, 0, 0, 0.151);
+	flex: 2;
+}
+
+.aside2 {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-radius: 10px 0px 0px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.151);
+	flex: 2;
+}
+
+/* ---< FOOTER >------------------- */
+footer {
+	background: rgba(194, 194, 194, 0.219);
+	backdrop-filter: blur(2px) saturate(120%);
+	border-top: 1px solid rgba(0, 0, 0, 0.151);
+
+	display: flex;
+	justify-content: center;
+
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
