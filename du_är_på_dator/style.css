@@ -2,6 +2,8 @@ body {
 	height: 100vh;
 	display: grid;
 	overflow: hidden;
+
+	transition: background-color 300ms linear;
 }
 p {
 	font:
