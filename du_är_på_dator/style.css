@@ -1,0 +1,33 @@
+body {
+	height: 100vh;
+	display: grid;
+	overflow: hidden;
+}
+p {
+	font:
+		italic 2em Georgia,
+		serif;
+	text-align: center;
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.dator {
+	color: #aaa;
+}
+.mobil {
+	color: #fff;
+	visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+	.dator {
+		visibility: hidden;
+	}
+	.mobil {
+		visibility: visible;
+	}
+	body {
+		background: #000000;
+	}
+}

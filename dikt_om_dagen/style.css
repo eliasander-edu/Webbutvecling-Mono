@@ -1,33 +1,32 @@
 @view-transition {
-    navigation: auto;
+	navigation: auto;
 }
 
-
 body {
-    margin: 3rem auto;
-    max-width: 50rem;
-    padding: 1em;
+	margin: 3rem auto;
+	max-width: 50rem;
+	padding: 1em;
 }
 
 * {
-    font-family: Verdana, serif;
+	font-family: Verdana, serif;
 }
 
 h1 {
-    margin: 0 0 -0.2rem 0;
+	margin: 0 0 -0.2rem 0;
 }
 
 img {
-    margin: 0;
-    width: 100%;
-    height: 15rem;
-    object-fit: cover;
+	margin: 0;
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
 }
 
 div.paragraph-with-image img {
-    float: right;
-    width: 10em;
-    height: 15em;
-    margin: 0 0 0 1em;
-    border: 0.2rem solid black;
+	float: right;
+	width: 10em;
+	height: 15em;
+	margin: 0 0 0 1em;
+	border: 0.2rem solid black;
 }
