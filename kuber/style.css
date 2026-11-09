@@ -1,51 +1,49 @@
 @view-transition {
-    navigation: auto;
+	navigation: auto;
 }
 
-
-
 body {
-    margin: 100px;
+	margin: 100px;
 }
 
 div {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    transition: all 0.2s ease-in-out;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	transition: all 0.2s ease-in-out;
 }
 div.green {
-    background-color: green;
+	background-color: green;
 }
 div.green:hover {
-    border-radius: 100%;
-    background-color: lightgreen;
-    z-index: 3;
+	border-radius: 100%;
+	background-color: lightgreen;
+	z-index: 3;
 }
-
 
 div.red {
-    background-color: red;
-    margin-top: 100px;
-    margin-left: 100px;
-    z-index: 2;
-
+	background-color: red;
+	margin-top: 100px;
+	margin-left: 100px;
+	z-index: 2;
 }
 div.red:hover {
-    rotate: 45deg;
+	rotate: 45deg;
 }
 div.blue {
-    background-color: blue;
-    margin-top: 200px;
-    margin-left: 200px;
-
+	background-color: blue;
+	margin-top: 200px;
+	margin-left: 200px;
 }
 div.blue:hover {
-    opacity: 0.0;
+	opacity: 0;
 }
 
-
 @keyframes rotate {
-    from {rotate: 0deg;}
-    to {rotate: 45deg;}
+	from {
+		rotate: 0deg;
+	}
+	to {
+		rotate: 45deg;
+	}
 }
